@@ -1,0 +1,151 @@
+[
+  {
+    "id": "goblin_cave",
+    "name": "The Goblin Cave",
+    "description": "A network of tunnels infested with goblins and their treasures.",
+    "requiredLevel": 10,
+    "floors": [
+      {
+        "floor": 1,
+        "name": "Cave Entrance",
+        "description": "The musty entrance to the goblin warren.",
+        "encounters": [
+          { "type": "Monster", "chance": 60, "data": { "monsters": ["goblin_scout", "cave_bat"] } },
+          { "type": "Treasure", "chance": 25, "data": { "gold": [20, 50], "items": ["health_potion"] } },
+          { "type": "Trap", "chance": 15, "data": { "damage": 15, "type": "spike_pit" } }
+        ],
+        "boss": null,
+        "rewards": [
+          { "itemId": "goblin_key", "chance": 100, "minQuantity": 1, "maxQuantity": 1 }
+        ]
+      },
+      {
+        "floor": 2,
+        "name": "Goblin Warrens", 
+        "description": "Twisting tunnels filled with goblin warriors.",
+        "encounters": [
+          { "type": "Monster", "chance": 70, "data": { "monsters": ["goblin_warrior", "goblin_shaman"] } },
+          { "type": "Treasure", "chance": 20, "data": { "gold": [30, 80], "items": ["mana_potion", "leather_armor"] } },
+          { "type": "Trap", "chance": 10, "data": { "damage": 25, "type": "poison_dart" } }
+        ],
+        "boss": null,
+        "rewards": []
+      },
+      {
+        "floor": 3,
+        "name": "Chieftain's Throne",
+        "description": "The grand chamber where the goblin chieftain rules.",
+        "encounters": [],
+        "boss": {
+          "id": "goblin_chieftain",
+          "name": "Grash the Goblin Chieftain",
+          "level": 15,
+          "health": 350,
+          "maxHealth": 350,
+          "attack": 40,
+          "defense": 18,
+          "element": "Physical",
+          "weakness": "Fire",
+          "skills": ["war_cry", "goblin_fury", "summon_goblins"],
+          "xpReward": 300,
+          "goldReward": 250,
+          "dropTable": [
+            { "itemId": "chieftain_crown", "chance": 80, "minQuantity": 1, "maxQuantity": 1 },
+            { "itemId": "goblin_treasure_map", "chance": 50, "minQuantity": 1, "maxQuantity": 1 },
+            { "itemId": "flame_sword", "chance": 25, "minQuantity": 1, "maxQuantity": 1 }
+          ],
+          "description": "The mighty ruler of all goblins in this cave system.",
+          "breakBar": 100,
+          "maxBreakBar": 100,
+          "stunned": false,
+          "type": "Boss"
+        },
+        "rewards": [
+          { "itemId": "dungeon_clear_certificate", "chance": 100, "minQuantity": 1, "maxQuantity": 1 }
+        ]
+      }
+    ],
+    "entryFee": 100,
+    "currency": "Gold",
+    "cooldown": 3600000,
+    "rewards": {
+      "xp": 500,
+      "gold": 400,
+      "items": ["goblin_cave_trophy"]
+    }
+  },
+  {
+    "id": "shadow_temple",
+    "name": "Temple of Endless Shadows",
+    "description": "An ancient temple where dark magic corrupts everything it touches.",
+    "requiredLevel": 25,
+    "floors": [
+      {
+        "floor": 1,
+        "name": "Corrupted Sanctum",
+        "description": "Once holy ground now tainted by shadow magic.",
+        "encounters": [
+          { "type": "Monster", "chance": 65, "data": { "monsters": ["shadow_cultist", "corrupted_priest"] } },
+          { "type": "Treasure", "chance": 20, "data": { "gold": [100, 200], "items": ["greater_health_potion", "shadow_essence"] } },
+          { "type": "Special", "chance": 15, "data": { "type": "shadow_puzzle", "reward": "shadow_key" } }
+        ],
+        "boss": null,
+        "rewards": []
+      },
+      {
+        "floor": 2,
+        "name": "Hall of Whispers",
+        "description": "Ghostly voices echo through this ethereal chamber.",
+        "encounters": [
+          { "type": "Monster", "chance": 70, "data": { "monsters": ["shadow_wraith", "void_phantom"] } },
+          { "type": "Treasure", "chance": 15, "data": { "gold": [150, 300], "items": ["void_crystal", "shadow_cloak"] } },
+          { "type": "Special", "chance": 15, "data": { "type": "mirror_trial", "reward": "reflection_shard" } }
+        ],
+        "boss": null,
+        "rewards": []
+      },
+      {
+        "floor": 3,
+        "name": "Void Nexus",
+        "description": "The heart of darkness where reality bends and breaks.",
+        "encounters": [],
+        "boss": {
+          "id": "shadow_lord",
+          "name": "Umbral Lord Vorthak",
+          "level": 30,
+          "health": 800,
+          "maxHealth": 800,
+          "attack": 65,
+          "defense": 30,
+          "element": "Dark",
+          "weakness": "Light",
+          "skills": ["void_lance", "shadow_domain", "darkness_incarnate", "soul_drain"],
+          "xpReward": 800,
+          "goldReward": 600,
+          "dropTable": [
+            { "itemId": "shadow_crown", "chance": 70, "minQuantity": 1, "maxQuantity": 1 },
+            { "itemId": "void_essence", "chance": 90, "minQuantity": 2, "maxQuantity": 4 },
+            { "itemId": "umbral_fang", "chance": 30, "minQuantity": 1, "maxQuantity": 1 },
+            { "itemId": "book_of_shadows", "chance": 20, "minQuantity": 1, "maxQuantity": 1 }
+          ],
+          "description": "A being of pure shadow and malice, seeking to devour all light.",
+          "breakBar": 150,
+          "maxBreakBar": 150,
+          "stunned": false,
+          "type": "Boss"
+        },
+        "rewards": [
+          { "itemId": "shadow_mastery_tome", "chance": 100, "minQuantity": 1, "maxQuantity": 1 }
+        ]
+      }
+    ],
+    "entryFee": 500,
+    "currency": "Gold",
+    "cooldown": 7200000,
+    "rewards": {
+      "xp": 1200,
+      "gold": 800,
+      "items": ["shadow_temple_seal"]
+    }
+  }
+]

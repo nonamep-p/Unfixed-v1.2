@@ -1,0 +1,344 @@
+[
+  {
+    "id": "shield_hero_plight",
+    "name": "The Shield Hero's Plight",
+    "anime": "The Rising of the Shield Hero",
+    "description": "Standing before great evil with only a shield, you feel its defensive power awaken.",
+    "triggerConditions": [
+      { "type": "combat", "condition": "boss_fight_with_shield_no_weapon", "comparison": "equal", "value": true },
+      { "type": "inventory", "condition": "has_shield_equipped", "comparison": "equal", "value": true },
+      { "type": "inventory", "condition": "no_weapon_equipped", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You stand before a great evil, armed only with a shield.",
+      "The world scoffs, but the shield feels... different. It pulses with a defensive rage.",
+      "For this battle, your shield becomes your greatest weapon!"
+    ],
+    "rewards": [
+      { "type": "buff", "value": "defense_triple", "permanent": false, "description": "Defense tripled for this battle" },
+      { "type": "skill", "value": "rage_shield", "permanent": true, "description": "Gain Rage Shield ability" },
+      { "type": "special", "value": "shield_reflection", "permanent": true, "description": "+5% Damage Reflection on equipped shield" }
+    ],
+    "rarity": "Legendary",
+    "oneTime": true,
+    "unlockLevel": 15,
+    "completedBy": []
+  },
+  {
+    "id": "skill_taker",
+    "name": "Skill Taker Awakening", 
+    "anime": "Re:Monster",
+    "description": "After consuming the same monster essence 100 times, you absorb its very being.",
+    "triggerConditions": [
+      { "type": "stat", "condition": "same_monster_kills", "comparison": "equal", "value": 100 }
+    ],
+    "dialogue": [
+      "You have consumed the essence of this creature so many times...",
+      "That you have absorbed its very being into your own!",
+      "You feel new abilities awakening within you."
+    ],
+    "rewards": [
+      { "type": "skill", "value": "monster_essence_skill", "permanent": true, "description": "Gain skill based on consumed monster" },
+      { "type": "stat", "value": "essence_absorption", "permanent": true, "description": "+10% XP from same monster type" }
+    ],
+    "rarity": "Rare", 
+    "oneTime": false,
+    "unlockLevel": 20,
+    "completedBy": []
+  },
+  {
+    "id": "cautious_hero",
+    "name": "The Overly Cautious Hero",
+    "anime": "Cautious Hero",
+    "description": "Your excessive preparation impresses even the gods.",
+    "triggerConditions": [
+      { "type": "action", "condition": "buy_three_identical_items", "comparison": "equal", "value": true },
+      { "type": "inventory", "condition": "already_has_one", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "The shopkeeper eyes your multiple identical purchases...",
+      "'Ready perfectly... You are a truly prepared hero.'",
+      "'I admire your thoroughness. Allow me to offer a service for someone so... cautious.'"
+    ],
+    "rewards": [
+      { "type": "special", "value": "item_merging", "permanent": true, "description": "Can merge 3 identical items into +1 version" },
+      { "type": "title", "value": "The Prepared", "permanent": true, "description": "Title: The Prepared One" }
+    ],
+    "rarity": "Uncommon",
+    "oneTime": true,
+    "unlockLevel": 10,
+    "completedBy": []
+  },
+  {
+    "id": "copy_paste_dungeon",
+    "name": "Copy-Paste Mastery",
+    "anime": "Conquering Dungeons with My OP Copy-Paste Skill", 
+    "description": "Witnessing a powerful technique, you gain the ability to copy it.",
+    "triggerConditions": [
+      { "type": "action", "condition": "spectate_arena_ultimate", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You watch intently as the combatant unleashes their ultimate technique...",
+      "A whisper enters your mind: 'You saw that? An interesting technique.'",
+      "'Would you like a... copy?'"
+    ],
+    "rewards": [
+      { "type": "item", "value": "skill_scroll", "permanent": false, "description": "One-time use scroll of witnessed skill" },
+      { "type": "skill", "value": "skill_copy", "permanent": true, "description": "Rare chance to copy enemy skills" }
+    ],
+    "rarity": "Epic",
+    "oneTime": false,
+    "unlockLevel": 25,
+    "completedBy": []
+  },
+  {
+    "id": "vending_machine_reincarnation",
+    "name": "Vending Machine Encounter",
+    "anime": "Reborn as a Vending Machine, I Now Wander the Dungeon",
+    "description": "A mysterious vending machine appears when you have excess supplies.",
+    "triggerConditions": [
+      { "type": "action", "condition": "use_item_at_full_health_mana", "comparison": "equal", "value": true },
+      { "type": "location", "condition": "in_dungeon", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You have an excess of supplies...",
+      "A strange, metallic box materializes before you.",
+      "It hums softly, offering a trade with mechanical precision."
+    ],
+    "rewards": [
+      { "type": "item", "value": "upgraded_consumable", "permanent": false, "description": "Better version of consumed item" },
+      { "type": "item", "value": "dungeon_ration_pack", "permanent": false, "description": "Party healing item" }
+    ],
+    "rarity": "Common",
+    "oneTime": false,
+    "unlockLevel": 15,
+    "completedBy": []
+  },
+  {
+    "id": "spider_transformation",
+    "name": "Arachnid Evolution",
+    "anime": "So I'm a Spider, So What?",
+    "description": "Surviving multiple poison attacks transforms your very nature.",
+    "triggerConditions": [
+      { "type": "combat", "condition": "poisoned_five_times_one_battle", "comparison": "equal", "value": true },
+      { "type": "combat", "condition": "survived_battle", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "The repeated venom doesn't kill you. It changes you.",
+      "You feel your senses sharpen, your instincts become predatory.",
+      "What doesn't kill you makes you... different."
+    ],
+    "rewards": [
+      { "type": "skill", "value": "poison_resistance", "permanent": true, "description": "25% poison damage reduction" },
+      { "type": "skill", "value": "venom_fang", "permanent": true, "description": "Attacks have chance to poison" },
+      { "type": "stat", "value": "dexterity", "permanent": true, "description": "+5 permanent Dexterity" }
+    ],
+    "rarity": "Rare",
+    "oneTime": true,
+    "unlockLevel": 18,
+    "completedBy": []
+  },
+  {
+    "id": "slime_assimilation",
+    "name": "Great Sage's Analysis",
+    "anime": "That Time I Got Reincarnated as a Slime",
+    "description": "Defeating a boss with minimal damage awakens analytical powers.",
+    "triggerConditions": [
+      { "type": "combat", "condition": "boss_final_blow_under_5_percent", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "With a final, insignificant nudge, the great beast falls.",
+      "It's not about the power of the strike, but the wisdom to know when to use it.",
+      "You feel a new analytical power awaken within your consciousness."
+    ],
+    "rewards": [
+      { "type": "skill", "value": "great_sage_analysis", "permanent": true, "description": "Analyze any monster once per day" },
+      { "type": "skill", "value": "weakness_detection", "permanent": true, "description": "See enemy weaknesses in combat" }
+    ],
+    "rarity": "Epic",
+    "oneTime": true,
+    "unlockLevel": 30,
+    "completedBy": []
+  },
+  {
+    "id": "no_game_no_life", 
+    "name": "Pledger of Disboard",
+    "anime": "No Game No Life",
+    "description": "Rolling a perfect 100 draws the attention of the God of Games.",
+    "triggerConditions": [
+      { "type": "action", "condition": "roll_perfect_100_vs_player", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "Perfect! Absolute! A roll of destiny!",
+      "『　』 never loses! But today, luck itself bows to you.",
+      "Aschente! In this world, all things are decided by games!"
+    ],
+    "rewards": [
+      { "type": "title", "value": "Pledger", "permanent": true, "description": "Title: Pledger of Disboard" },
+      { "type": "item", "value": "coin_of_disboard", "permanent": false, "description": "Flip coin: double damage or no damage" }
+    ],
+    "rarity": "Legendary",
+    "oneTime": true,
+    "unlockLevel": 20,
+    "completedBy": []
+  },
+  {
+    "id": "smartphone_isekai",
+    "name": "Divine Information Network",
+    "anime": "In Another World With My Smartphone",
+    "description": "Your thirst for knowledge gains divine attention.",
+    "triggerConditions": [
+      { "type": "action", "condition": "help_command_10_times_5_minutes", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You seem to be consulting the world's knowledge base with incredible frequency.",
+      "A divine entity takes notice of your thirst for information.",
+      "Knowledge is power, and you shall have access to all of it."
+    ],
+    "rewards": [
+      { "type": "skill", "value": "divine_search", "permanent": true, "description": "Enhanced help command with search function" },
+      { "type": "skill", "value": "appraisal", "permanent": true, "description": "Identify any item or monster" }
+    ],
+    "rarity": "Uncommon", 
+    "oneTime": true,
+    "unlockLevel": 5,
+    "completedBy": []
+  },
+  {
+    "id": "eminence_in_shadow",
+    "name": "I Am Atomic",
+    "anime": "The Eminence in Shadow",
+    "description": "Fleeing from a boss while at high health demonstrates true shadow mastery.",
+    "triggerConditions": [
+      { "type": "action", "condition": "flee_boss_above_90_hp", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You appeared, faced a great power, and vanished without a trace...",
+      "Leaving them bewildered. This is the art of the shadow broker.",
+      "An unseen force acknowledges your impeccable style."
+    ],
+    "rewards": [
+      { "type": "item", "value": "smoked_glass_monocle", "permanent": true, "description": "Stylish cosmetic monocle" },
+      { "type": "skill", "value": "i_am_atomic", "permanent": true, "description": "Flashy visual effect ability" },
+      { "type": "title", "value": "Shadow Broker", "permanent": true, "description": "Title: Master of Shadows" }
+    ],
+    "rarity": "Epic",
+    "oneTime": true,
+    "unlockLevel": 35,
+    "completedBy": []
+  },
+  {
+    "id": "bookworm_paradise",
+    "name": "Bookworm's Blessing",
+    "anime": "Ascendance of a Bookworm", 
+    "description": "Your dedication to learning and creating catches a goddess's attention.",
+    "triggerConditions": [
+      { "type": "action", "condition": "learn_25_recipes", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "Your desire to learn and create is truly insatiable.",
+      "It reminds a certain blue-haired goddess of her own fervent passion.",
+      "She blesses your workshop with divine efficiency."
+    ],
+    "rewards": [
+      { "type": "buff", "value": "crafting_discount", "permanent": true, "description": "5% reduction in all crafting material costs" },
+      { "type": "skill", "value": "mass_production", "permanent": true, "description": "Craft multiple items at once" }
+    ],
+    "rarity": "Rare",
+    "oneTime": true,
+    "unlockLevel": 25,
+    "completedBy": []
+  },
+  {
+    "id": "death_march",
+    "name": "Meteoric Rise",
+    "anime": "Death March to a Parallel World Rhapsody",
+    "description": "A low-level hero's desperate strike fells a mighty boss.",
+    "triggerConditions": [
+      { "type": "combat", "condition": "low_level_kills_high_boss", "comparison": "equal", "value": true },
+      { "type": "stat", "condition": "player_level", "comparison": "less", "value": 15 },
+      { "type": "stat", "condition": "boss_level", "comparison": "greater", "value": 50 }
+    ],
+    "dialogue": [
+      "A single, desperate strike from a novice fells the cataclysmic beast!",
+      "A meteor shower of experience rains down upon you!",
+      "You feel the world itself rewriting your existence!"
+    ],
+    "rewards": [
+      { "type": "stat", "value": "instant_level_30", "permanent": true, "description": "Instantly level up to 30" },
+      { "type": "special", "value": "golden_name", "permanent": false, "description": "Gold name color for 24 hours" },
+      { "type": "title", "value": "Giant Slayer", "permanent": true, "description": "Title: Giant Slayer" }
+    ],
+    "rarity": "Mythic",
+    "oneTime": true,
+    "unlockLevel": 1,
+    "completedBy": []
+  },
+  {
+    "id": "konosuba_fortune", 
+    "name": "Aqua's Pity",
+    "anime": "KonoSuba",
+    "description": "Your terrible luck amuses a goddess of parties and fortune.",
+    "triggerConditions": [
+      { "type": "action", "condition": "crafting_fail_then_flee_fail", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "A crafting failure followed by a failed escape attempt...",
+      "Wow, your luck is just... spectacularly terrible.",
+      "A goddess of fortune (and parties) takes pity on you. Or maybe she's just amused."
+    ],
+    "rewards": [
+      { "type": "skill", "value": "steal", "permanent": true, "description": "Chance to steal items from enemies" },
+      { "type": "skill", "value": "party_tricks", "permanent": true, "description": "Boost party morale in dungeons" }
+    ],
+    "rarity": "Common",
+    "oneTime": true,
+    "unlockLevel": 8,
+    "completedBy": []
+  },
+  {
+    "id": "log_horizon_scribe",
+    "name": "Pioneer's Knowledge",
+    "anime": "Log Horizon",
+    "description": "Being first to chart unknown territory grants you recognition.",
+    "triggerConditions": [
+      { "type": "achievement", "condition": "first_dungeon_clear", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "You have charted the unknown and created a path for others.",
+      "You are not just an adventurer; you are a pioneer.",
+      "Your knowledge becomes law, your discoveries become legend."
+    ],
+    "rewards": [
+      { "type": "special", "value": "strategy_guide_author", "permanent": true, "description": "Can write strategy guides for dungeons" },
+      { "type": "title", "value": "Pathfinder", "permanent": true, "description": "Title: First Pathfinder" },
+      { "type": "stat", "value": "exploration_bonus", "permanent": true, "description": "+25% XP from dungeon discovery" }
+    ],
+    "rarity": "Epic", 
+    "oneTime": false,
+    "unlockLevel": 20,
+    "completedBy": []
+  },
+  {
+    "id": "devil_part_timer",
+    "name": "MgRonald's Connection",
+    "anime": "The Devil is a Part-Timer!",
+    "description": "A suspicious purchase total triggers a mysterious encounter.",
+    "triggerConditions": [
+      { "type": "action", "condition": "spend_exactly_666_gold", "comparison": "equal", "value": true }
+    ],
+    "dialogue": [
+      "The shopkeeper gives you a strange look at your purchase total...",
+      "'An... interesting amount. This reminds me of a guy who used to work at the MgRonald's down the street.'",
+      "'He was always complaining about his job. Dropped this one day.'"
+    ],
+    "rewards": [
+      { "type": "item", "value": "ente_isla_burger", "permanent": false, "description": "Restores 100% HP and MP" },
+      { "type": "skill", "value": "part_time_worker", "permanent": true, "description": "+10% gold from all sources" }
+    ],
+    "rarity": "Uncommon",
+    "oneTime": true,
+    "unlockLevel": 12,
+    "completedBy": []
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "health_potion",
+    "name": "Minor Health Potion",
+    "type": "Consumable",
+    "rarity": "Common",
+    "description": "A simple red potion that restores health.",
+    "plaggCommentary": "Tastes terrible! Not like cheese at all. But it works, I guess.",
+    "effect": { "healAmount": 50 },
+    "sellPrice": 10,
+    "buyPrice": 20,
+    "level": 1,
+    "element": "None"
+  },
+  {
+    "id": "mana_potion",
+    "name": "Minor Mana Potion", 
+    "type": "Consumable",
+    "rarity": "Common",
+    "description": "A blue potion that restores magical energy.",
+    "plaggCommentary": "Fizzy! Like cheese soda. Wait, that's a terrible idea...",
+    "effect": { "manaAmount": 30 },
+    "sellPrice": 15,
+    "buyPrice": 30,
+    "level": 1,
+    "element": "None"
+  },
+  {
+    "id": "greater_health_potion",
+    "name": "Greater Health Potion",
+    "type": "Consumable",
+    "rarity": "Uncommon", 
+    "description": "A potent healing elixir with enhanced restorative properties.",
+    "plaggCommentary": "Much better! Though still not cheese-flavored...",
+    "effect": { "healAmount": 150 },
+    "sellPrice": 50,
+    "buyPrice": 100,
+    "level": 10,
+    "element": "None"
+  },
+  {
+    "id": "plagg_cheese",
+    "name": "Plagg's Special Camembert",
+    "type": "Consumable",
+    "rarity": "Legendary",
+    "description": "The finest camembert cheese, personally approved by Plagg himself.",
+    "plaggCommentary": "NOW WE'RE TALKING! The ultimate healing item! *chef's kiss*",
+    "effect": { "healAmount": 500, "manaAmount": 200, "duration": 5, "type": "blessing" },
+    "sellPrice": 1000,
+    "buyPrice": 2000,
+    "level": 25,
+    "element": "None"
+  },
+  {
+    "id": "phoenix_elixir",
+    "name": "Elixir of Rebirth",
+    "type": "Consumable", 
+    "rarity": "Epic",
+    "description": "A legendary elixir that can bring back the recently fallen.",
+    "plaggCommentary": "Death-defying! Though I'd rather defy a world without cheese.",
+    "effect": { "type": "resurrection", "healAmount": 1000 },
+    "sellPrice": 2500,
+    "buyPrice": 5000,
+    "level": 35,
+    "element": "Fire"
+  }
+]

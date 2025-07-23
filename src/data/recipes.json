@@ -1,0 +1,101 @@
+[
+  {
+    "id": "steel_sword_recipe",
+    "name": "Steel Sword Forging",
+    "description": "Forge a reliable steel sword from iron ingots.",
+    "resultItem": "steel_sword",
+    "resultQuantity": 1,
+    "materials": [
+      { "itemId": "iron_ingot", "quantity": 3, "consumed": true },
+      { "itemId": "coal", "quantity": 2, "consumed": true }
+    ],
+    "goldCost": 50,
+    "craftingLevel": 1,
+    "craftingStation": "forge",
+    "successRate": 90,
+    "craftingTime": 120,
+    "category": "Weapons",
+    "discoveredBy": [],
+    "rarity": "Common"
+  },
+  {
+    "id": "flame_sword_recipe", 
+    "name": "Blazing Scimitar Forging",
+    "description": "Infuse a steel blade with fire essence to create a flame weapon.",
+    "resultItem": "flame_sword",
+    "resultQuantity": 1,
+    "materials": [
+      { "itemId": "steel_sword", "quantity": 1, "consumed": true },
+      { "itemId": "fire_crystal", "quantity": 2, "consumed": true },
+      { "itemId": "phoenix_feather", "quantity": 1, "consumed": true }
+    ],
+    "goldCost": 200,
+    "craftingLevel": 15,
+    "craftingStation": "enchanting_table",
+    "successRate": 75,
+    "craftingTime": 300,
+    "category": "Weapons",
+    "discoveredBy": [],
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "health_potion_recipe",
+    "name": "Minor Health Potion Brewing",
+    "description": "Brew a basic healing potion from herbs.",
+    "resultItem": "health_potion",
+    "resultQuantity": 3,
+    "materials": [
+      { "itemId": "healing_herb", "quantity": 2, "consumed": true },
+      { "itemId": "water_essence", "quantity": 1, "consumed": true },
+      { "itemId": "empty_bottle", "quantity": 3, "consumed": true }
+    ],
+    "goldCost": 15,
+    "craftingLevel": 1,
+    "craftingStation": "alchemy_table",
+    "successRate": 95,
+    "craftingTime": 60,
+    "category": "Consumables",
+    "discoveredBy": [],
+    "rarity": "Common"
+  },
+  {
+    "id": "plagg_cheese_recipe",
+    "name": "Special Camembert Preparation",
+    "description": "Prepare Plagg's favorite cheese with magical enhancement.",
+    "resultItem": "plagg_cheese",
+    "resultQuantity": 1,
+    "materials": [
+      { "itemId": "aged_camembert", "quantity": 1, "consumed": true },
+      { "itemId": "miraculous_energy_crystal", "quantity": 1, "consumed": true },
+      { "itemId": "blessing_scroll", "quantity": 1, "consumed": true }
+    ],
+    "goldCost": 500,
+    "craftingLevel": 30,
+    "craftingStation": "miraculous_altar",
+    "successRate": 60,
+    "craftingTime": 600,
+    "category": "Special",
+    "discoveredBy": [],
+    "rarity": "Legendary"
+  },
+  {
+    "id": "dragon_helm_recipe",
+    "name": "Dragonscale Helmet Crafting",
+    "description": "Craft a powerful helmet from dragon scales.",
+    "resultItem": "dragon_helm",
+    "resultQuantity": 1,
+    "materials": [
+      { "itemId": "dragon_scale", "quantity": 5, "consumed": true },
+      { "itemId": "mithril_wire", "quantity": 2, "consumed": true },
+      { "itemId": "dragon_fire", "quantity": 1, "consumed": true }
+    ],
+    "goldCost": 1000,
+    "craftingLevel": 40,
+    "craftingStation": "dragon_forge",
+    "successRate": 70,
+    "craftingTime": 900,
+    "category": "Armor",
+    "discoveredBy": [],
+    "rarity": "Rare"
+  }
+]
